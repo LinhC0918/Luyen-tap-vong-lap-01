@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 7</title>
+</head>
+<body>
+    <script>
+        for (var N = 1; N <= 100; N++) {
+            var isDivisonBy3 = N % 3 === 0;
+            var isDivisionBy5 = N % 5 === 0;
+            if (isDivisonBy3 && isDivisionBy5) {
+                document.write('FizzBuzz' + '<br>');
+            } else if (isDivisionBy5) {
+                document.write('Buzz' + '<br>');
+            } else if (isDivisonBy3) {
+                document.write('Fizz' + '<br>');
+            } else
+                document.write(N + '<br>');
+        }
+    </script>
+</body>
+</html>
