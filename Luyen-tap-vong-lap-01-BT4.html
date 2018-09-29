@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 3</title>
+</head>
+<body>
+    <script>
+        var first = 1;
+        var second = 1;
+        var third;
+
+        for (var count = 0; count < 18; count++) {
+            third = first + second;
+            first = second;
+            second = third;
+            var isDivisionBy5 = third % 5 === 0;
+            if (isDivisionBy5) {
+                document.write('So dau tien chia het cho 5 trong day Fibonacci la: ' + third );
+                break;
+            }
+
+        }
+    </script>
+</body>
+</html>

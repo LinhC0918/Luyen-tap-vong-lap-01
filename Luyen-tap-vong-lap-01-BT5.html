@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 4</title>
+</head>
+<body>
+    <script>
+        var first = 0;
+        var second = 1;
+        var third;
+        var sum = 0;
+
+        for (var count = 0; count < 18; count++) {
+            third = first + second;
+            first = second;
+            second = third;
+            sum += third;
+        }
+        document.write(sum);
+    </script>
+</body>
+</html>
